@@ -1,7 +1,7 @@
 package schach.domain.actions;
 
 
-public class Castling implements Action {
+public class Castling implements GameAction {
 
 	public void perform() {
 		// TODO Auto-generated method stub

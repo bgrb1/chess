@@ -2,7 +2,7 @@ package schach.domain.actions;
 
 import schach.domain.game.Square;
 
-public class EnPassant extends Move implements Action {
+public class EnPassant extends Move implements GameAction {
 
 	public EnPassant(Square origin, Square destination) {
 		super(origin, destination);

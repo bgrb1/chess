@@ -1,4 +1,4 @@
-package schach.logic.scanner;
+package schach.application.scanner;
 
 public class CheckScanner {
 	

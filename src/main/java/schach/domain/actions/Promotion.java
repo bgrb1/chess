@@ -2,7 +2,7 @@ package schach.domain.actions;
 
 import schach.domain.game.Square;
 
-public class Promotion extends Move implements Action {
+public class Promotion extends Move implements GameAction {
 
 	public Promotion(Square origin, Square destination) {
 		super(origin, destination);

@@ -1,7 +1,7 @@
 package schach.domain.pieces;
 
-import schach.domain.game.Square;
 import schach.domain.game.Player;
+import schach.domain.game.Square;
 
 public class Bishop extends AbstractPiece {
 

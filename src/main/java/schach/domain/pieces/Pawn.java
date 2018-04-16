@@ -1,9 +1,9 @@
 package schach.domain.pieces;
 
-import schach.domain.game.Square;
 import schach.domain.actions.ActionType;
 import schach.domain.game.Board;
 import schach.domain.game.Player;
+import schach.domain.game.Square;
 
 public class Pawn extends AbstractPiece {
 

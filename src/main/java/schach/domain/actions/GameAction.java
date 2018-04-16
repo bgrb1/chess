@@ -1,9 +1,8 @@
 package schach.domain.actions;
 
-public interface Action {
+public interface GameAction {
 	
 	public void perform();
 	public void revert();
 	
-
 }

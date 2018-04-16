@@ -1,5 +1,7 @@
 package schach.domain.game;
 
+import java.awt.Color;
+
 import schach.domain.pieces.AbstractPiece;
 
 public class Square {
@@ -21,6 +23,10 @@ public class Square {
 	
 	public boolean isEmpty(){
 		return false;
+	}
+	
+	public Color getColor(){
+		return null;
 	}
 
 }

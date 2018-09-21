@@ -10,8 +10,8 @@ public abstract class AbstractPiece {
 	// public abstract final Object icon; 
 	
 	
-	// !!!!! Möglichkeit finden, Abhängigkeit von Board zu besetitigen !!!!!
-	public abstract ActionType analyseMove(Board board, Square destination); // Gibt die Art des Zugs zurück, INVALID wenn nicht zulässig 
+	// !!!!! MÃ¶glichkeit finden, AbhÃ¤ngigkeit von Board zu besetitigen !!!!!
+	public abstract ActionType analyseMove(Board board, Square destination); // Gibt die Art des Zugs zurÃ¼ck, INVALID wenn nicht zulÃ¤ssig 
 
 	public abstract char toChar(); // Figur als Schach-Zeichen
 	
@@ -27,7 +27,7 @@ public abstract class AbstractPiece {
 		this.player = player;	
 	}
 	
-	public final String toChessNotation(){ // Gibt die Figur mit Position in Schachnotation zurück 
+	public final String toChessNotation(){ // Gibt die Figur mit Position in Schachnotation zurÃ¼ck 
 		return null;
 	}
 	
@@ -39,11 +39,19 @@ public abstract class AbstractPiece {
 		return player;
 	}
 	
-	public final void capture(){ // Schlägt die Figur
+	public final void capture(){ // SchlÃ¤gt die Figur
 
 	}
 	
-	public final ActionType moveOrCapture(Square destination){ // Hilfsfunktion für analyseMove(Board, Square);
+	private final boolean checkPath(Square [] path){
+		for(Square s : paths) {
+			if(!s.isEmpty()){
+				return false;
+			}
+		}
+		return true;
+	}
+	private final ActionType moveOrCapture(Square destination){ // Hilfsfunktion fÃ¼r analyseMove(Board, Square);
 		boolean capture = !destination.isEmpty();
 		if(capture){
 			return ActionType.CAPTURE;

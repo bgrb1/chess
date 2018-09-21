@@ -7,7 +7,7 @@ import schach.domain.game.Square;
 
 public class Bishop extends AbstractPiece {
 	
-	//Läufer
+	//LÃ¤ufer
 
 	public Bishop(Player player, Square position) {
 		super(player, position);
@@ -16,7 +16,7 @@ public class Bishop extends AbstractPiece {
 	@Override
 	public ActionType analyseMove(Board board, Square destination) {
 		
-		//!! ANMERKUNG: Eventuell diese Abfrage entfernen da nicht sinnvoll für Performance !!
+		//!! ANMERKUNG: Eventuell diese Abfrage entfernen da nicht sinnvoll fÃ¼r Performance !!
 		if(position.getColor() == destination.getColor()){
 			byte row_origin = position.getRow();
 			byte column_origin = position.getColumn();
@@ -36,6 +36,16 @@ public class Bishop extends AbstractPiece {
 	public char toChar() {
 		return 'B';
 	}
+	
+	private void calculatePath(Square destination){
+		byte row = position.getRow();
+		byte column = position.getColumn();
+		byte row_destination = destination.getRow();
+		byte column_destination = destination.getColumn();
+		
+		byte abs = 
+		while (row != row_destination && column != culumn_destination){
+			
 
 
 
